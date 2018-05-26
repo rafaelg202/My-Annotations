@@ -33,6 +33,10 @@ class ViewController: UIViewController {
         return ""
     }
     
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
